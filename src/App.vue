@@ -1,17 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Accueil msg="Liste des villes"/>
+    <a v-on:click="onListClick" href="" target="_blank" rel="noopener">Villes</a>
+    <CitiesList msg="Météo - Liste des villes"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Accueil from './components/Accueil.vue'
+import CitiesList from "./components/CitiesList.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Accueil,
+    CitiesList,
+  },
+  data(){
+    return {
+
+  }},
+  methods: {
+    onListClick() {
+      window.alert("Vous avez cliqué")
+    }
   }
 }
 </script>
