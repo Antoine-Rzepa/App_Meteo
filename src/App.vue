@@ -2,12 +2,11 @@
   <div id="app">
     <Accueil msg="Accueil"/>
     <a v-on:click="onListClick" href="">Villes</a>
-
-    <router-view></router-view>
     <hr>
     <router-link to="/">Accueil</router-link>
     <hr>
     <router-link to="/villes">Villes</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
