@@ -1,20 +1,23 @@
 <template>
   <div id="app">
-    <Accueil msg="Liste des villes"/>
-    <a v-on:click="onListClick" href="" target="_blank" rel="noopener">Villes</a>
-    <CitiesList msg="Météo - Liste des villes"/>
+    <Accueil msg="Accueil"/>
+    <a v-on:click="onListClick" href="">Villes</a>
+
+    <router-view></router-view>
+    <hr>
+    <router-link to="/">Accueil</router-link>
+    <hr>
+    <router-link to="/villes">Villes</router-link>
   </div>
 </template>
 
 <script>
 import Accueil from './components/Accueil.vue'
-import CitiesList from "./components/CitiesList.vue";
 
 export default {
   name: 'App',
   components: {
     Accueil,
-    CitiesList,
   },
   data(){
     return {
@@ -26,6 +29,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style>
