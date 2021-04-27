@@ -1,23 +1,21 @@
 <template>
-  <div>
-      <h1>{{ name }}</h1>
-      <p>{{ updatedAt.toLocaleString() }}</p>
-      <p>{{ weather }} / {{ temperature }} °C</p>
-  </div>
+
+    <tr>
+      <td>{{name}}</td>
+      <td>{{temperature}} °C</td>
+      <td>{{weather}}</td>
+      <td>{{updatedAt.toLocaleString()}}</td>
+    </tr>
+
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-
-    }
-  },
   props: {
     name: String,
     weather: String,
     temperature: Number,
-    updatedAt: Function
+    updatedAt: String
   }
 }
 </script>
