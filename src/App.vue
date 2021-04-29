@@ -38,9 +38,21 @@ export default {
   margin-top: 60px;
 }
 img {
+  margin-top: 50px;
   height: 300px;
 }
 h1 {
   margin: 50px 50px;
+}
+#map {
+  width: 100%;
+  height: 700px;
+}
+#map .marker {
+  border: 2px solid rgba(255, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
 }
 </style>

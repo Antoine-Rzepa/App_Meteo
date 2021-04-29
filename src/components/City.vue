@@ -15,7 +15,7 @@ export default {
   props: {
     name: String,
     weather: String,
-    temperature: String,
+    temperature: Number,
     updatedAt: String
   }
 }

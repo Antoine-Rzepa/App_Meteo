@@ -1,13 +1,12 @@
 <template>
-
   <div>
     <h1>Liste des Villes</h1>
     <section v-if="error">
-      <h1>Nous sommes désolé, nous n'arrivons pas a retrouver les informations, essayer plus tard</h1>
+      <h1>Nous sommes désolé, nous n'arrivons pas a retrouver les informations, ressayer plus tard</h1>
     </section>
     <section v-else>
       <div v-if="loading"><h1>En cours de chargement</h1></div>
-      <table class="table">
+      <table class="table table-dark table-striped table-hover">
         <thead>
         <tr>
           <th scope="col">Nom</th>
@@ -54,8 +53,8 @@ export default {
     }
   },
   filters: {
-    kelvinToCelsius(value) {
-      return (value - 273.15).toFixed(2)
+    kelvinToCelsius: function(value) {
+      return Math.trunc(value - 273.15)
     }
   },
   methods: {
