@@ -1,22 +1,20 @@
 <template>
   <div id="app">
-    <Accueil msg="Accueil"/>
-    <a v-on:click="onListClick" href="">Villes</a>
-    <hr>
-    <router-link to="/">Accueil</router-link>
-    <hr>
-    <router-link to="/villes">Villes</router-link>
+    <Navbar />
+    <img
+        src="https://file1.science-et-vie.com/var/scienceetvie/storage/images/8/8/88531/le-tour-france-des-regions.jpg?alias=exact1024x768_l"
+        alt="logo">
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Accueil from './components/Accueil.vue'
+import Navbar from "./components/Navbar";
 
 export default {
   name: 'App',
   components: {
-    Accueil,
+    Navbar
   },
   data(){
     return {
@@ -28,7 +26,6 @@ export default {
     }
   }
 }
-
 </script>
 
 <style>
@@ -39,5 +36,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+img {
+  height: 300px;
+}
+h1 {
+  margin: 50px 50px;
 }
 </style>

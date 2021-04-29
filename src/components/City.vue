@@ -11,10 +11,11 @@
 
 <script>
 export default {
+  name: "City",
   props: {
     name: String,
     weather: String,
-    temperature: Number,
+    temperature: String,
     updatedAt: String
   }
 }
