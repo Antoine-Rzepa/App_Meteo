@@ -5,7 +5,7 @@
       <mapbox
           access-token="pk.eyJ1IjoiYW50b2luZS1yemVwYSIsImEiOiJja28yanJ4MGcxMDIwMnVrNGZ0ZXltbGUzIn0.2QFh3Pqty2xU7_l8RlqRGQ"
           :map-options="{
-        style: 'mapbox://styles/mapbox/outdoors-v11',
+        style: 'mapbox://styles/mapbox/satellite-v9',
         center: [6.124211, 45.91],
         zoom: 10,
       }"
@@ -35,7 +35,7 @@ import axios from "axios";
 export default {
   name: "CitiesMap",
   components: {
-    Mapbox
+    Mapbox,
   },
   data() {
     return {

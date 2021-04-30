@@ -5,16 +5,19 @@
         src="https://file1.science-et-vie.com/var/scienceetvie/storage/images/8/8/88531/le-tour-france-des-regions.jpg?alias=exact1024x768_l"
         alt="logo">
     <router-view></router-view>
+    <ChatBox/>
   </div>
 </template>
 
 <script>
 import Navbar from "./components/Navbar";
+import ChatBox from "./components/ChatBox";
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar,
+    ChatBox
   },
   data(){
     return {
