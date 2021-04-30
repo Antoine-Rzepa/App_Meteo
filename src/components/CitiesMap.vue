@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>Carte</h1>
-
     <div>
       <mapbox
           access-token="pk.eyJ1IjoiYW50b2luZS1yemVwYSIsImEiOiJja28yanJ4MGcxMDIwMnVrNGZ0ZXltbGUzIn0.2QFh3Pqty2xU7_l8RlqRGQ"
@@ -50,8 +49,9 @@ export default {
     loaded(map) {
       for (let i = 0; i < this.cities.length; i++) {
       let el = document.createElement('div');
-      el.className = 'marker';
 
+      el.className = 'marker';
+      el.style.backgroundImage = 'url(http://openweathermap.org/img/wn/' + this.cities[i].weather[0].icon + '@2x.png)';
       new mapboxgl.Marker(el)
           .setLngLat([this.cities[i].coord.lon, this.cities[i].coord.lat])
           .addTo(map);

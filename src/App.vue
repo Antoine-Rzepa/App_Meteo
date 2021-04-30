@@ -49,10 +49,11 @@ h1 {
   height: 700px;
 }
 #map .marker {
-  border: 2px solid rgba(255, 0, 0, 0.5);
-  border-radius: 50%;
-  width: 3em;
-  height: 3em;
+  background-size: 7em;
+  /*border: 2px solid rgba(255, 0, 0, 0.5);*/
+  /*border-radius: 50%;*/
+  width: 7em;
+  height: 7em;
   cursor: pointer;
 }
 </style>
